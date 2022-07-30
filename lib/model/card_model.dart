@@ -26,7 +26,7 @@ List<CardModel> myCards = [
     cardColor: kPrimaryColor,
   ),
   CardModel(
-    cardHolderName: "John Doe",
+    cardHolderName: "Ivan Ivanov",
     cardNumber: "****  ****  ****  4321",
     cvv: "**1",
     expDate: "01/22",
