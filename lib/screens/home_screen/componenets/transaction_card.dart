@@ -12,7 +12,7 @@ class TransactionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           border: Border.all(color: Colors.grey.shade300)),
@@ -27,7 +27,7 @@ class TransactionCard extends StatelessWidget {
                   Container(
                     height: 60,
                     width: 60,
-                    padding: EdgeInsets.all(5),
+                    padding: const EdgeInsets.all(5),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
                       color: transaction.color,
@@ -36,7 +36,7 @@ class TransactionCard extends StatelessWidget {
                       image: AssetImage(transaction.avatar),
                     ),
                   ),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   Expanded(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -73,17 +73,17 @@ class TransactionCard extends StatelessWidget {
                   Row(
                     children: [
                       transaction.changePercentageIndicator == 'up'
-                          ? Icon(
+                          ? const Icon(
                               FontAwesomeIcons.turnUp,
                               size: 10,
                               color: Colors.green,
                             )
-                          : Icon(
+                          : const Icon(
                               FontAwesomeIcons.turnDown,
                               size: 10,
                               color: Colors.red,
                             ),
-                            SizedBox(width: 5,),
+                            const SizedBox(width: 5,),
                             Text(transaction.changePercentage, style: ApptextStyle.listtileSubtitle,)
                     ],
                   )
