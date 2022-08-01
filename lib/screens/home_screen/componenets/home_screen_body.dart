@@ -33,11 +33,11 @@ class HomeScreenBody extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            Text('Recent Transactions', style: ApptextStyle.bodyText),
-            SizedBox(
+            const Text('Recent Transactions', style: ApptextStyle.bodyText),
+            const SizedBox(
               height: 15,
             ),
             ListView.separated(
@@ -51,7 +51,7 @@ class HomeScreenBody extends StatelessWidget {
               },
               itemCount: myTransactions.length,
               shrinkWrap: true,
-              physics: NeverScrollableScrollPhysics(),
+              physics: const NeverScrollableScrollPhysics(),
             ),
           ],
         ),
